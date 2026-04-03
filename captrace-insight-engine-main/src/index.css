@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+    --background: 210 20% 98%; /* #F8FAFC */
+    --foreground: 222 47% 11%; /* #0F172A */
+
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 224 76% 48%; /* #2563EB */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%; /* #64748B */
+
+    --accent: 210 20% 98%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 84% 39%; /* #10B981 */
+    --success-foreground: 0 0% 100%;
+
+    --warning: 25 95% 53%; /* #F97316 */
+    --warning-foreground: 0 0% 100%;
+
+    --text-secondary: 215 16% 47%; /* #64748B */
+    --text-primary-alt: 215 28% 17%; /* #1E2937 */
+
+    --border: 220 13% 91%; /* #E5E7EB */
+    --input: 220 13% 91%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 224 76% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 98%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 224 76% 48%;
+
+    --shadow-xs: 0 1px 2px rgba(15,23,42,0.04);
+    --shadow-card: 0 4px 24px rgba(15,23,42,0.06);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply bg-card rounded-xl border;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-surface-flat {
+    @apply bg-card rounded-xl border;
+    box-shadow: var(--shadow-xs);
+  }
+
+  .input-surface {
+    @apply bg-card rounded-xl border px-3 py-2 text-sm;
+    box-shadow: var(--shadow-xs);
+  }
+}
