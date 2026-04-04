@@ -1,8 +1,10 @@
 # Welcome to your Lovable project
 
-# Captrace — system architecture
+# Captrace - system architecture
 
 This document describes **how Captrace is built to solve a real workflow problem**, not a slide-only concept. The hackathon demo is a **vertical slice** of this design; the same boundaries apply in production.
+<img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/58db202c-9053-4a13-9287-5f0c0dffe6ef" />
+
 
 ---
 
